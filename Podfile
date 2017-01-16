@@ -3,6 +3,10 @@
 target ‘CheckUp’ do
   # Pods for ARO Inspections
     pod 'Firebase/Core'
+    pod 'Firebase/Auth’
+    pod 'Firebase/Storage’
+    pod 'Firebase/Database’
+    pod 'Firebase/Messaging’
   target 'CheckUpTests’ do
     inherit! :search_paths
     # Pods for testing

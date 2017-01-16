@@ -26,6 +26,9 @@
 		9CF3C7321E2C7D4B006E85B1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF3C7311E2C7D4B006E85B1 /* SystemConfiguration.framework */; };
 		9CF3C7351E2C7FDF006E85B1 /* Checker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3C7341E2C7FDF006E85B1 /* Checker.m */; };
 		9CF3C7E31E2D2EB7006E85B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CF3C7E21E2D2EB7006E85B1 /* GoogleService-Info.plist */; };
+		9CF3C7E61E2D313D006E85B1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3C7E51E2D313D006E85B1 /* LoginViewController.m */; };
+		9CF3C7E91E2D4BD5006E85B1 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3C7E81E2D4BD5006E85B1 /* ParentViewController.m */; };
+		9CF3C7EB1E2D5796006E85B1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF3C7EA1E2D5796006E85B1 /* AVFoundation.framework */; };
 		D24571C6736517E41A690012 /* libPods-CheckUpTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 446D93049094596C617777D7 /* libPods-CheckUpTests.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +84,11 @@
 		9CF3C7331E2C7FDF006E85B1 /* Checker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Checker.h; sourceTree = "<group>"; };
 		9CF3C7341E2C7FDF006E85B1 /* Checker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Checker.m; sourceTree = "<group>"; };
 		9CF3C7E21E2D2EB7006E85B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9CF3C7E41E2D313D006E85B1 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		9CF3C7E51E2D313D006E85B1 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		9CF3C7E71E2D4BD5006E85B1 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
+		9CF3C7E81E2D4BD5006E85B1 /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
+		9CF3C7EA1E2D5796006E85B1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CA2225516D737464705EF17A /* libPods-CheckUpUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheckUpUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC0989DA6768B5F2DC51F6B2 /* libPods-CheckUp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheckUp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CF3C7EB1E2D5796006E85B1 /* AVFoundation.framework in Frameworks */,
 				9CF3C7321E2C7D4B006E85B1 /* SystemConfiguration.framework in Frameworks */,
 				9CF3C72A1E2C7330006E85B1 /* Accelerate.framework in Frameworks */,
 				9CF3C72B1E2C7330006E85B1 /* CoreData.framework in Frameworks */,
@@ -158,8 +167,12 @@
 			children = (
 				9CF3C6F21E2C58EF006E85B1 /* AppDelegate.h */,
 				9CF3C6F31E2C58EF006E85B1 /* AppDelegate.m */,
+				9CF3C7E41E2D313D006E85B1 /* LoginViewController.h */,
+				9CF3C7E51E2D313D006E85B1 /* LoginViewController.m */,
 				9CF3C6F51E2C58EF006E85B1 /* ViewController.h */,
 				9CF3C6F61E2C58EF006E85B1 /* ViewController.m */,
+				9CF3C7E71E2D4BD5006E85B1 /* ParentViewController.h */,
+				9CF3C7E81E2D4BD5006E85B1 /* ParentViewController.m */,
 				9CF3C7331E2C7FDF006E85B1 /* Checker.h */,
 				9CF3C7341E2C7FDF006E85B1 /* Checker.m */,
 				9CF3C6F81E2C58EF006E85B1 /* Main.storyboard */,
@@ -204,6 +217,7 @@
 		9CF3C7251E2C7330006E85B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9CF3C7EA1E2D5796006E85B1 /* AVFoundation.framework */,
 				9CF3C7311E2C7D4B006E85B1 /* SystemConfiguration.framework */,
 				9CF3C7261E2C7330006E85B1 /* Accelerate.framework */,
 				9CF3C7271E2C7330006E85B1 /* CoreData.framework */,
@@ -491,8 +505,10 @@
 			files = (
 				9CF3C6F71E2C58EF006E85B1 /* ViewController.m in Sources */,
 				9CF3C7351E2C7FDF006E85B1 /* Checker.m in Sources */,
+				9CF3C7E91E2D4BD5006E85B1 /* ParentViewController.m in Sources */,
 				9CF3C6F41E2C58EF006E85B1 /* AppDelegate.m in Sources */,
 				9CF3C6F11E2C58EF006E85B1 /* main.m in Sources */,
+				9CF3C7E61E2D313D006E85B1 /* LoginViewController.m in Sources */,
 				9CF3C6FD1E2C58EF006E85B1 /* CheckUp.xcdatamodeld in Sources */,
 				9CF3C7301E2C7D22006E85B1 /* Reachability.m in Sources */,
 			);
