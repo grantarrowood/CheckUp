@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <CoreMotion/CoreMotion.h>
+#import <CoreData/CoreData.h>
+#import <Accelerate/Accelerate.h>
 
-@interface ViewController : UIViewController
 
+@interface ViewController : UIViewController <CLLocationManagerDelegate> 
+
+@property (nonatomic, strong) CLLocationManager *locationManager;
+- (IBAction)stopAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *speedLabel;
 
 @end
 
